@@ -46,7 +46,7 @@ clear_input() {
 choose_kernel_type() {
   clear_input
   ui_print " "
-  ui_print "Kernel Type:"
+  ui_print "XStock Variant:"
   ui_print "  Volume + : GKI"
   ui_print "  Volume - : CLO"
   ui_print " "
@@ -71,7 +71,7 @@ choose_ksu() {
   ui_print " "
   ui_print "KernelSU Support:"
   ui_print "  Volume + : With KSU"
-  ui_print "  Volume - : Without KSU"
+  ui_print "  Volume - : Vanilla"
   ui_print " "
   
   while true; do
@@ -107,7 +107,7 @@ if [ $? -eq 1 ]; then
   ui_print "Selected: With KSU"
 else
   ksu_type="noksu"
-  ui_print "Selected: Without KSU"
+  ui_print "Selected: Vanilla"
 fi
 
 # Move selected kernel
